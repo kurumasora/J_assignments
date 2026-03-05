@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int area;
+    printf("S:");
+    scanf("%d",&area);
+
+    for(int tete = 1;tete<area; tete++){
+        if(tete*tete >area){
+            break;
+        }
+        if(area % tete!= 0){
+            continue;
+        }
+        printf("%d * %d\n",tete, area / tete);
+    }
+    return 0;
+}

@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    double a,b;
+puts("put in two things");
+printf("a:");  scanf("%lf",&a);
+printf("b:");  scanf("%lf",&b);
+
+printf("the value of a is %f%% of b. \n", a / b *100);
+return 0;
+}

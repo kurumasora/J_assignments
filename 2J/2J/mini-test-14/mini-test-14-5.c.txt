@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main(void){
+    int n, v, a;
+    int t[100] = {0};
+    scanf("%d", &n);
+    if (!(n >= 0 &&n <= 100)){
+        return 0;
+    }
+    scanf("%d" ,&v);
+
+    for (int i = 1;i <= n;i++){
+        scanf("%d", &a);
+        if (a >= 0 && a <10){
+            t[i] = a;
+        }
+    }
+    for (int i = n;i> 0;i--){
+        t[i] += v;
+        if (t[i] >= 10){
+            t[1]-=10;
+            v=1;
+        }
+        else {
+            v =0;
+        }
+    }
+    if (v == 1){
+        printf("1");
+    }
+    
+    for (int i = 1;i <= n;i++){
+        printf("%d", t[i]);
+    }
+    return 0;
+}
+    

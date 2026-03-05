@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int v = 0;
+    printf("v?:");
+    scanf("%d",&v);
+    if(v==1){
+        printf("Hare\n");
+    }else if(v==2){
+        printf("Kumori\n");
+    }else if(v==3){
+        printf("Ame\n");
+    }else if(v > 5){
+        printf("");
+    }
+    return 0;
+
+}

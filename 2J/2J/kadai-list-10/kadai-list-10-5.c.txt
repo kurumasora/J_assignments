@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+    int no;
+    int q = no / 10;
+    int r = no % 10;
+
+    for (int i = 1; i <= q; i++){
+        printf("1234567890");
+    }
+    for(int i = 1; i <= r; i++){
+        printf("%d",i%10);
+    }
+    putchar('\n');
+    return 0;
+}

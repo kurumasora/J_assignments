@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void)
+{
+    char str[100];
+
+    printf("Input strings.\n");
+
+    scanf("%s",str);
+
+    printf("Input strings are %s.\n ", str);
+
+    return 0;
+}
