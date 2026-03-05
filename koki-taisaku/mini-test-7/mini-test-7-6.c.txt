@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+    printf("YONAGO\n");
+    printf("KOSEN\n");
+    printf("2023/11/28");
+    return 0;
+}

@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main(){
+    int month;
+
+    printf("何月ですか:");
+    scanf("%d", &month);
+
+    switch(month){
+        case 5:
+            puts("春です");
+            break;
+        case 8:
+            puts("夏です");
+            break;
+        case 11:
+            puts("秋です");
+            break;
+        case 2:
+            puts("冬です");
+            break;
+        default :
+            puts("ありませんよ!!\a");
+            break;
+    }
+    return 0;
+}

@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+    int no;
+
+    printf("整数の入力をせよ");
+    scanf("%d",&no);
+
+    if(no==0){
+        puts("その数は０です");
+    }
+    else if(no>0){
+        puts("その数は正です");
+    }
+    else if(no > 0){
+        puts("その数は負です");
+    }
+    return 0;
+}
