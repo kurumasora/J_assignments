@@ -1,0 +1,4 @@
+三項演算子
+    if(a == "x") printf("OK\n");
+    else printf("NG\n");
+   

@@ -1,0 +1,167 @@
+/*背景色*/
+body{
+  background-color: lightyellow;
+}
+/*ここからmailタグ*/
+.container{
+  width: 960px;
+  margin-right:auto;
+  margin-left:auto;
+}
+ 
+.mail{
+  background-color: skyblue;
+  width: 960px;
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 0 30px;
+  clear: both;
+}
+ 
+.mail label{
+  display: block;
+  margin: 0 0 0.5em 0;
+}
+ 
+.mail input{
+  width: 100%;
+  margin: 0 0 0.5em 0;
+  padding: 8px;
+  border: 1px solid black;
+  font-size: 1.2em;
+}
+ 
+.mail button{
+  background-color: brown;
+  width: 100%;
+  margin: 1em 0;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0 yellow;
+  color: white;
+  outline: none;
+}
+/*マウスオーバーした時
+背景色は青、影は無し、文字色は金色にする*/
+.mail button:hover {
+  background-color: blue;
+  color: gold;
+  box-shadow: none;
+}
+/*ボタンを選択した時
+背景色は緑、影はピンク、文字色は銀色にする*/
+.mail button:active {
+  background-color: green;
+  color: silver;
+  box-shadow: 0 0 20px 0 pink;
+}
+
+
+/*ここからドロップダウンメニュー*/
+header h1{
+  text-align: center;
+}
+.ddmenu{
+  background-color: dimgray;
+  margin:0px;
+  padding:0px 15px;
+}
+.ddmenu > li{
+  display: inline-block;
+  position: relative;
+  list-style-type: none;
+  width: 220px;
+}
+.ddmenu li:hover ul{
+  display: block;
+}
+.ddmenu a{
+  display: block;
+  background-color: dimgray;
+  padding: 0px 30px;
+  color:white;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+.ddmenu ul{
+  margin:0px;
+  padding: 0px;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+}
+.ddmenu ul li a{
+  text-align: left;
+  padding-left: 10px;
+  font-weight: normal;
+}
+/*ここから7枚の画像が10秒間自動でスライドする処理*/
+
+.slider{
+  width: 960px;
+  height: 360px;
+  overflow: hidden;
+}
+.slider-w{
+  width:700%;
+  position: relative;
+  animation: slider 10s infinite;
+}
+.slider-i{
+  float:left;
+  position: relative;
+}
+
+@keyframes slider{
+  0%{transform: translateX(0);}
+  14%{transform: translateX(-960px);}
+  28%{transform: translateX(-1920px);}
+  42%{transform: translateX(-2880px);}
+  56%{transform: translateX(-3840px);}
+  70%{transform: translateX(-4880px);}
+  84%{transform: translateX(-5760px);}
+  100%{transform: translateX(0);}
+}
+/*ここからinfo部分*/
+.info{
+  float:left;
+  width: 50%;
+  height: 200px;
+  background-color: aquamarine;
+  padding: 0 20px;
+  overflow: visible scroll;
+
+}
+.info table{
+  width: 90%;
+  margin: 10px;
+}
+.info td{
+  border-bottom:1px dotted black;
+  padding: 5px;
+}
+/*ここからpickup部分*/
+.pickup{
+  float:left;
+  width: 50%;
+  height: 200px;
+  background-color: pink;
+  padding: 0 20px;
+  overflow: visible scroll;
+
+}
+.pickup table{
+  width: 90%;
+  margin: 10px;
+}
+.pickup td{
+  border-bottom:1px dotted black;
+  padding: 5px;
+}
+/*footer要素*/
+.footer{
+  text-align: center;
+}

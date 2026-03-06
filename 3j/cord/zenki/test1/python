@@ -1,0 +1,71 @@
+if 条件:
+    # 条件が真のときに実行するコード
+elif 別の条件:
+    # 別の条件が真のときに実行するコード
+else:
+    # どの条件も真でないときに実行するコード
+
+
+
+
+x = 10
+
+if x > 0:
+    print("xは正の数です")
+elif x < 0:
+    print("xは負の数です")
+else:
+    print("xはゼロです")
+
+
+
+
+x = 10
+
+if x > 0:
+    print("xは正の数です")
+elif x < 0:
+    print("xは負の数です")
+else:
+    print("xはゼロです")
+
+
+
+
+
+fruits = ["apple", "banana", "cherry"]
+
+for fruit in fruits:
+    print(fruit)
+    
+    
+while 条件:
+   # 繰り返し実行するコード
+    
+    
+    
+count = 0
+
+while count < 5:
+    print(count)
+    count += 1
+    
+    
+    
+    
+    
+    
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+    
+    
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)
+
+
+
+

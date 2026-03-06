@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <!--ここからwebサイトの表示されない設定や内容-->
+    <head>
+        <meta charset = "UTF-8">
+        <title>17-22059-来間空-Webページの作成-実験結果</title>
+        <link rel="stylesheet"href="./sanitize.css">
+        <link rel="stylesheet"href="./17-22059-来間空-Webページの作成-実験結果.css">
+        <script src = "./jquery-3.7.1.min.js"></script>
+        <script>
+            /*scriptタグはjQueryで記述*/
+            $(function(){
+                $('.mail').remove();/*mailクラスの要素を削除する*/
+                $('button').on('click', function(){
+                    $('body').css("background-color","green"); /*ボタンを押したら背景が緑になる*/
+                });
+                $('h1').mouseover(function(){
+                    $('h1').html("米子高専").css("font-style","italic")/*h1タグをマウスオーバーしたらh1タグの文字列が斜体の米子高専に変わる*/
+                });
+            });
+        </script>
+    </head>
+    <!--ここからwebサイトの表示される部分-->
+    <body>
+        <div class="container">
+             <!--ここからheaderタグ-->
+            <header>
+               <h1>米子工業高等専門学校</h1>
+               <!--ドロップダウンメニューの作成-->
+                <nav>
+                    <ul class="ddmenu">
+                        <li><a href="#">学校案内</a>
+                            <ul>
+                                <li><a href="#">米子高専の概要</a></li>
+                                <li><a href="#">校長挨拶</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">学科・専攻科案内</a>
+                            <ul>
+                                <li><a href="https://www.yonago-k.ac.jp/a086/a089"target="_blank" rel="noopener noreferre">機械工学科</a></li>
+                                <li><a href="https://www.yonago-k.ac.jp/a086/a090"target="_blank" rel="noopener noreferre">電気情報工学科</a></li>
+                                <li><a href="https://www.yonago-k.ac.jp/denshi/"target="_blank" rel="noopener noreferre">電子制御工学科</a></li>
+                                <li><a href="https://www.yonago-k.ac.jp/a086/a092"target="_blank" rel="noopener noreferre">物質工学科学科</a></li>
+                                <li><a href="https://www.yonago-k.ac.jp/a086/a093"target="_blank" rel="noopener noreferre">建築学科</a></li>
+                                <li><a href="https://www.yonago-k.ac.jp/a086/a094/"target="_blank" rel="noopener noreferre">教養教育科</a></li>
+                                <li><a href="https://www.yonago-k.ac.jp/a086/a095"target="_blank" rel="noopener noreferre">専攻科</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">入学案内</a>
+                            <ul>
+                                <li><a href="#">アドミッションポリシー</a></li>
+                                <li><a href="#">入学試験の概要</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">キャンパスライフ</a>
+                            <ul>
+                                <li><a href="#">年間スケジュール</a></li>
+                                <li><a href="#">学生便覧</a></li>
+                            </ul>
+                        </li>
+                        
+                        
+
+                        
+
+                       
+                    </ul>
+                
+                    
+                   
+                </nav>
+            </header>
+            <!--ここからmainタグ-->
+            <main>
+                <div class="slider">
+                    <div class="slider-w">
+                        <div class="slider-i"><img src="./image/1.jpg"width="960" height="370"></div>
+                        <div class="slider-i"><img src="./image/2.jpg"width="960" height="370"></div>
+                        <div class="slider-i"><img src="./image/3.jpg"width="960" height="370"></div>
+                        <div class="slider-i"><img src="./image/4.jpg"width="960" height="370"></div>
+                        <div class="slider-i"><img src="./image/5.jpg"width="960" height="370"></div>
+                        <div class="slider-i"><img src="./image/6.jpg"width="960" height="370"></div>
+                        <div class="slider-i"><img src="./image/7.jpg"width="960" height="370"></div>
+                        
+                    </div>
+
+                </div>
+
+                <!--ここからinfo部分-->
+                <div class="info">
+                    <h2>お知らせ Infomation</h2>
+                    <table>
+                        <tr>
+                            <td>20/08/07</td>
+                            <td>明日から夏休みです。</td>
+                        </tr>
+                        <tr>
+                            <td>20/04/01</td>
+                            <td>新年度が始まりました。</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <!--ここからpickup部分-->
+                <div class="pickup">
+                    <h2>ピックアップKOSEN!</h2>
+                    <table>
+                        <tr>準備中！</tr>
+                    </table>
+
+                </div>
+
+           
+                <!--ここからmail部分-->
+                <div class="mail">
+                <h2>メール配信</h2>
+                <p>以下のような情報をメールで配信しています</p>
+                <ul>
+                    <li>イベントに関する情報</li>
+                    <li>学生や教員の活動に関する情報</li>
+                    <li>日々の学生生活に関する情報</li>
+                </ul>
+                <p>配信を希望する場合は必要事項を入力の上、「登録」ボタンを選択してください</p>
+                <label for="mail">メールアドレス</label>
+                <input type="email" name="mail" id="mail" />
+                <label for="pass">パスワード</label>
+                <input type="password" name="pass" id="password" />
+                <button type="submit">登録</button>
+                </div>
+                <!--ボタンを押すと背景が緑になるボタン-->
+                <button>ミドリ</button>
+         </main>
+         <!--ここからfooterタグ-->
+         <footer>
+            <div class="footer">
+                
+                <p>〒683-8502  鳥取県米子市彦名町4448</p>
+    
+                
+               
+                <p>© National Institute of Technology, Yonago College</p>
+            </div>
+         </footer>
+        </div>
+    </body>
+</html>
